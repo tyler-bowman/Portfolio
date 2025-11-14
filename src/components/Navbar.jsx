@@ -1,0 +1,15 @@
+import React from "react";
+
+export default function Navbar() {
+  return (
+    <nav className="flex justify-between items-center p-6 bg-white shadow-md">
+      <h1 className="text-2xl font-bold">Tyler Bowman</h1>
+      <ul className="flex space-x-6 text-gray-700 font-medium">
+        <li><a href="#projects" className="hover:text-blue-500">Projects</a></li>
+        <li><a href="#skills" className="hover:text-blue-500">Skills</a></li>
+        <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </nav>
+  );
+}
+
