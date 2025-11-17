@@ -1,2 +1,47 @@
 @import "tailwindcss";
 
+/* ---- White → Black ML Background ---- */
+
+.ml-grid-bg {
+    position: absolute;
+    inset: 0;
+
+    /* White center fading into black */
+    background: radial-gradient(circle at 15% 50%, #000000 0%, #d3d3d3 100%);
+    /*background: radial-gradient(circle at 50% 35%, #87CEFA 0%, #000000 100%);*/
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Subtle dark grid */
+.ml-grid-bg::before,
+.ml-grid-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    /* Dark grey grid lines */
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.10) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.10) 1px, transparent 1px);
+
+    background-size: 60px 60px;
+    opacity: 0.35; /* Faint but visible */
+}
+
+/* Extra depth glow layer */
+.ml-grid-bg::after {
+    transform: translateY(-50%);
+
+    background-image:
+        linear-gradient(
+            135deg,
+            transparent 50%,
+            rgba(255, 255, 255, 0.20) 75%,
+            rgba(100, 100, 100, 0.15) 100%
+        );
+
+    mix-blend-mode: screen;
+    opacity: 0.6;
+}
+
