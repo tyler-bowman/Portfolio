@@ -90,3 +90,7 @@
     opacity: 0.6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+

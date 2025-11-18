@@ -29,9 +29,9 @@ export default function SeeweedSection() {
 
                     {/* Caption in Frosted Green Box */}
                     <div className="bg-green-300/10 text-gray-200 p-5 rounded-xl backdrop-blur-sm 
-                                    border border-green-300/20 shadow-md text-center max-w-[85%] mx-auto">
-                        <p className="text-xl">
-				I created and presented this Excel chart to the Seeweed team to illustrate the improvements of the new model I developed compared to the original version, based on our 50-image validation set.
+                                    border border-green-300/20 shadow-md text-center max-w-[100%] mx-auto">
+                        <p className="text-2xl">
+				I created and presented this now-sanitized Excel chart to the Seeweed team to illustrate the improvements of the new model I developed compared to the previous version. All underlying data has been removed for confidentiality, but the chart still reflects a 28% improvement in overall success rate.
                         </p>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ export default function SeeweedSection() {
                             <a
                                 href="https://seeweedcameras.com/"
                                 target="_blank"
-                                className="text-green-700 hover:text-green-900 text-2xl font-medium"
+                                className="text-green-700 hover:text-green-900 text-3xl font-medium"
                             >
                                 seeweedcameras.com
                             </a>
@@ -69,7 +69,7 @@ export default function SeeweedSection() {
                                     border border-green-300/20 max-w-[85%] mx-auto">
                         <h3 className="text-4xl font-semibold mb-3">What I Work On</h3>
 
-                        <ul className="list-disc ml-6 space-y-3 text-2xl text-gray-200">
+                        <ul className="list-disc ml-6 space-y-3 text-3xl text-gray-200">
                             <li>
 				Developed and deployed a custom AI model for Discovery Channel under a strict 6-day deadline, meeting specialized project requirements.
                             </li>
