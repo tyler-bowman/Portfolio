@@ -121,8 +121,8 @@ export default function About() {
                     <div className="flex space-x-4 bg-white/10 px-4 py-3 rounded-xl shadow-md w-full">
                         {[
                             { label: "Resume", file: ResumePDF },
-                            { label: "Letter from Mitch", file: MitchLetter },
-                            { label: "Letter from Petullo", file: PetulloLetter },
+                            { label: "Letter from Mitch G", file: MitchLetter },
+                            { label: "Letter from Prof. Petullo", file: PetulloLetter },
                             { label: "Transcript", file: TranscriptPDF }
                         ].map((tab) => (
                             <button
