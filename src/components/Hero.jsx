@@ -28,14 +28,14 @@ export default function Hero() {
                     </h1>
 
                     {/* Larger paragraph */}
-                    <p className="text-white max-w-lg text-xl leading-relaxed">
+                    <p className="text-white max-w-sm text-xl leading-relaxed">
                         Full-Stack Software Developer with experience in AI and Machine Learning.
                     </p>
 
                     {/* Bigger button */}
                     <a
                         href="#about"
-                        className="inline-block mt-8 px-8 py-4 bg-blue-600 text-white rounded-lg text-lg font-semibold shadow-lg hover:bg-blue-700 transition"
+                        className="inline-block mt-8 px-8 py-4 bg-blue-600 text-white rounded-lg text-sm font-semibold shadow-lg hover:bg-blue-700 transition"
                     >
                         Learn More About Me
                     </a>
