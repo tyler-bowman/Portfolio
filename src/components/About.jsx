@@ -61,7 +61,7 @@ export default function About() {
 
                     {/* Gallery */}
                     <div className="w-full max-w-[90%]">
-                        <div className="relative w-full h-72 lg:h-150 overflow-hidden rounded-xl shadow-xl mx-auto">
+                        <div className="relative w-full h-80 lg:h-[600px] overflow-hidden rounded-xl shadow-xl mx-auto">
                             <img
                                 src={slides[currentIndex].image}
                                 alt="Gallery slide"
