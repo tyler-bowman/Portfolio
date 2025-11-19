@@ -19,9 +19,9 @@ export default function SeeweedSection() {
                 {/* LEFT COLUMN — PDF VIEWER */}
                 <div className="flex flex-col w-full space-y-8">
 
-                    <div className="bg-white/10 p-5 rounded-xl shadow-2xl w-full h-[950px]">
+                    <div className="bg-white/10 p-5 rounded-xl shadow-2xl w-full h-[600px]">
                         <iframe
-                            src={`${ModelPDF}#zoom=110`}
+                            src={`${ModelPDF}#zoom=80`}
                             className="w-full h-full rounded-lg bg-white shadow-lg"
                             title="Model Comparison Chart"
                         ></iframe>
@@ -30,14 +30,14 @@ export default function SeeweedSection() {
                     {/* Caption in Frosted Green Box */}
                     <div className="bg-green-300/10 text-gray-200 p-5 rounded-xl backdrop-blur-sm 
                                     border border-green-300/20 shadow-md text-center max-w-[100%] mx-auto">
-                        <p className="text-2xl">
+                        <p className="text-sm">
 				I created and presented this now-sanitized Excel chart to the Seeweed team to illustrate the improvements of the new model I developed compared to the previous version. All underlying data has been removed for confidentiality, but the chart still reflects a 28% improvement in overall success rate.
                         </p>
                     </div>
                 </div>
 
                 {/* RIGHT COLUMN — LOGO + ROLE + BULLETS */}
-                <div className="flex flex-col w-full space-y-10 -ml-10">
+                <div className="flex flex-col w-full space-y-5 -ml-10">
 
                     {/* LOGO — aligned with top of PDF */}
                     <div className="w-full flex flex-col items-center text-center space-y-4">
@@ -45,19 +45,19 @@ export default function SeeweedSection() {
                         <img
                             src={SeeweedLogo}
                             alt="Seeweed Logo"
-                            className="w-[50rem] max-w-full h-auto rounded-lg shadow-xl"
+                            className="w-[30rem] max-w-full h-auto rounded-lg shadow-xl"
                         />
 
                         {/* Role + Website in same frosted box */}
                         <div className="bg-green-200/30 backdrop-blur-sm border border-green-300/30 
                                         px-6 py-4 rounded-lg shadow-md flex flex-col items-center space-y-1">
-                            <p className="text-3xl font-semibold text-black">
+                            <p className="text-lg font-semibold text-black">
                                 Software Developer (AI) Intern — May 2024 to Present
                             </p>
                             <a
                                 href="https://seeweedcameras.com/"
                                 target="_blank"
-                                className="text-green-700 hover:text-green-900 text-3xl font-medium"
+                                className="text-green-700 hover:text-green-900 text-3lg font-medium"
                             >
                                 seeweedcameras.com
                             </a>
@@ -65,11 +65,11 @@ export default function SeeweedSection() {
                     </div>
 
                     {/* Bullet Point Glass Card — Frosted Green */}
-                    <div className="bg-green-300/10 p-8 rounded-xl shadow-xl backdrop-blur-sm 
+                    <div className="bg-green-300/10 p-4 rounded-xl shadow-xl backdrop-blur-sm 
                                     border border-green-300/20 max-w-[85%] mx-auto">
-                        <h3 className="text-4xl font-semibold mb-3">What I Work On</h3>
+                        <h3 className="text-lg font-semibold mb-3">What I Work On</h3>
 
-                        <ul className="list-disc ml-6 space-y-3 text-3xl text-gray-200">
+                        <ul className="list-disc ml-6 space-y-3 text-m text-gray-200">
                             <li>
 				Developed and deployed a custom AI model for Discovery Channel under a strict 6-day deadline, meeting specialized project requirements.
                             </li>
