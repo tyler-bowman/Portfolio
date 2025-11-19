@@ -4,6 +4,9 @@
 
 /* ---- White → Black ML Background ---- */
 
+html { font-size: 16px !important; }
+
+
 .ml-grid-bg {
     position: absolute;
     inset: 0;
