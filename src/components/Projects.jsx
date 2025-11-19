@@ -14,7 +14,7 @@ export default function Projects() {
             link: "https://github.com/tyler-bowman/Finite-Automata-Simulator",
             image: AutomataImg
         },
-        {
+	{
             title: "Personal Portfolio Website",
             description:
                 "This site you're viewing — built with React, TailwindCSS, and custom UI components. Features smooth scrolling, PDF viewers, carousels, and branded layout.",
@@ -33,17 +33,17 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="relative w-full min-h-screen px-6 md:px-10 py-24 text-white overflow-x-hidden"
+            className="relative w-full min-h-screen px-6 md:px-10 py-24 text-white"
         >
             {/* Background */}
             <div className="ml-grid-bg1"></div>
 
             {/* Foreground */}
-            <div className="relative z-10 w-full max-w-screen-xl mx-auto">
+            <div className="relative z-10 w-full max-w-8xl mx-auto">
 
                 {/* Frosted Title Box */}
                 <div className="w-full flex justify-center mb-20">
-                    <div className="bg-white/10 backdrop-blur-md border border-white/10 px-10 md:px-20 py-8 rounded-2xl shadow-xl text-center max-w-full">
+                    <div className="bg-white/10 backdrop-blur-md border border-white/10 px-80 py-8 rounded-2xl shadow-xl text-center">
                         <h3 className="text-5xl md:text-6xl font-extrabold tracking-wide drop-shadow-xl">
                             My Projects
                         </h3>
@@ -62,7 +62,7 @@ export default function Projects() {
                                        flex flex-col min-h-[480px]"
                         >
                             {/* Image */}
-                            <div className="w-full h-64 overflow-hidden">
+                            <div className="w-full h-110 overflow-hidden">
                                 <img
                                     src={proj.image}
                                     alt={proj.title}
