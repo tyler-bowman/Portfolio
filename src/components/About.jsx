@@ -61,7 +61,7 @@ export default function About() {
 
                     {/* Gallery */}
                     <div className="w-full max-w-[90%]">
-                        <div className="relative w-full h-80 lg:h-[600px] overflow-hidden rounded-xl shadow-xl mx-auto">
+                        <div className="relative w-[100%] h-300 lg:h-[300px] overflow-hidden rounded-xl shadow-xl mx-auto">
                             <img
                                 src={slides[currentIndex].image}
                                 alt="Gallery slide"
@@ -89,19 +89,19 @@ export default function About() {
                     </div>
 
                     {/* About Me — FROSTED BLACK BLUR CARD */}
-                    <div className="backdrop-blur-sm bg-black/60 p-8 rounded-xl shadow-xl space-y-6 max-w-[90%]">
-                        <h2 className="text-4xl font-bold">About Me</h2>
+                    <div className="backdrop-blur-sm bg-black/60 p-3 rounded-xl shadow-xl space-y-6 max-w-[90%]">
+                        <h2 className="text-xl font-bold">About Me</h2>
 
-                        <p className="leading-relaxed text-white text-xl">
+                        <p className="leading-relaxed text-white text-m">
                             I’m a Computer Science and Mathematics student at UW–La Crosse, graduating in May 2026 and planning to move back to Hudson, Wisconsin. I grew up in Spring Valley, a small and close-knit community that shaped my values and appreciation for the outdoors.
                         </p>
 
-                        <p className="leading-relaxed text-white text-xl">
+                        <p className="leading-relaxed text-white text-m">
                             During my time at UW–La Crosse, I competed as a student-athlete on the football team, which strengthened my leadership, discipline, work ethic, and ability to balance demanding schedules. Outside of academics, I enjoy hunting, fishing, birding, and spending time in nature whenever I can.
                         </p>
 
                         {/* UPDATED PARAGRAPH WITH LINK TO SEEWEED SECTION */}
-                        <p className="leading-relaxed text-white text-xl">
+                        <p className="leading-relaxed text-white text-m">
                             I currently work remotely for{" "}
                             <a
                                 href="#seeweed"
@@ -129,7 +129,7 @@ export default function About() {
                                 key={tab.label}
                                 onClick={() => setSelectedPDF(tab.file)}
                                 className={`
-                                    px-4 py-2 rounded-lg text-lg transition
+                                    px-4 py-2 rounded-lg text-sm transition
                                     ${selectedPDF === tab.file
                                         ? "bg-blue-500 text-white shadow-md"
                                         : "bg-white/20 text-gray-200 hover:bg-white/30"}
@@ -141,9 +141,9 @@ export default function About() {
                     </div>
 
                     {/* PDF VIEWER */}
-                    <div className="bg-white/10 p-5 rounded-xl shadow-2xl w-full h-[1120px]">
+                    <div className="bg-white/10 p-5 rounded-xl shadow-2xl w-full h-[750px]">
                         <iframe
-                            src={`${selectedPDF}#zoom=110`}
+                            src={`${selectedPDF}#zoom=75`}
                             className="w-full h-full rounded-lg bg-white shadow-lg"
                             title="PDF Viewer"
                         ></iframe>
