@@ -8,7 +8,7 @@ export default function SeeweedSection() {
     return (
         <section
             id="seeweed"
-            className="relative w-full min-h-screen text-white px-10 py-5"
+            className="relative w-full min-h-screen text-white px-10 py-10"
         >
             {/* Background */}
             <div className="ml-grid-bg"></div>
