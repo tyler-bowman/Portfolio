@@ -35,7 +35,7 @@ export default function Hero() {
                     {/* Bigger button */}
                     <a
                         href="#about"
-                        className="inline-block mt-8 px-8 py-4 bg-blue-600 text-white rounded-lg text-sm font-semibold shadow-lg hover:bg-blue-700 transition"
+                        className="inline-block mt-8 px-8 py-4 bg-blue-500 text-white rounded-lg text-sm font-semibold shadow-lg hover:bg-blue-700 transition"
                     >
                         Learn More About Me
                     </a>
