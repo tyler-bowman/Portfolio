@@ -7,8 +7,8 @@ import img3 from "../assets/MomFam.jpg";
 import img4 from "../assets/DadFam.jpg";
 import img5 from "../assets/Friends.jpg";
 import img6 from "../assets/Roommates.jpg";
-import img7 from "../assets/Deer3.jpg";
-import img8 from "../assets/Fish1.jpg";
+import img7 from "../assets/Deer.jpg";
+import img8 from "../assets/Fish.jpg";
 import img9 from "../assets/Yogi.jpg";
 
 // Documents
@@ -30,7 +30,7 @@ export default function About() {
         { image: img4, caption: "My Dad's side of the family." },
         { image: img5, caption: "My high school friends and I after a game." },
         { image: img6, caption: "My college roommates and I at a friend's wedding." },
-        { image: img7, caption: "Me with the buck I harvested in 2023." },
+        { image: img7, caption: "Me with the buck I harvested in Nov 2025." },
         { image: img8, caption: "Me with a smallmouth bass I caught in Door County." },
         { image: img9, caption: "My dog Yogi and I." }
     ];
@@ -96,16 +96,25 @@ export default function About() {
                             I’m a Computer Science and Mathematics student at UW–La Crosse, graduating in May 2026 and planning to move back to Hudson, Wisconsin. I grew up in Spring Valley, a small and close-knit community that shaped my values and appreciation for the outdoors.
                         </p>
 
-                        <p className="leading-relaxed text-white text-m">
-                            During my time at UW–La Crosse, I competed as a student-athlete on the football team, which strengthened my leadership, discipline, work ethic, and ability to balance demanding schedules. Outside of academics, I enjoy hunting, fishing, birding, and spending time in nature whenever I can.
-                        </p>
+			<p className="leading-relaxed text-white text-m">
+			    During my time at UW–La Crosse, I competed as a{" "}
+  			    <a
+    				href="https://wiacsports.com/news/2025/11/20/uw-la-crosses-bowman-named-football-max-sparger-scholar-athlete.aspx"
+    				className="font italic text-blue-500 hover:text-blue-700"
+    				target="_blank"
+    				rel="noopener noreferrer"
+  			   >
+    				student-athlete
+  			   </a>{" "}
+  			   on the football team, which strengthened my leadership, discipline, work ethic, and ability to balance demanding schedules. Outside of academics, I enjoy hunting, fishing, birding, and spending time in nature whenever I can.
+			</p>
 
                         {/* UPDATED PARAGRAPH WITH LINK TO SEEWEED SECTION */}
                         <p className="leading-relaxed text-white text-m">
                             I currently work remotely for{" "}
                             <a
                                 href="#seeweed"
-                                className="text-white hover:text-green-500 transition font bold italic"
+                                className="text-green-500 hover:text-green-700 transition font italic"
                             >
                                 Seeweed Underwater Game Cameras
                             </a>
