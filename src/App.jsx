@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import About from "./components/About";
 import SeeweedSection from "./components/SeeweedSection";
+import { Analytics } from "@vercel/analytics/next";
 
 function App() {
   return (
